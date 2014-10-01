@@ -1,4 +1,4 @@
-router
-======
+Component Router
+================
 
-Component-based routing archiecture for single-page applications (SPA)
+> Component-based routing archiecture for single-page applications (SPA)
