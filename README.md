@@ -76,5 +76,8 @@ You can specify default values, for example:
 
 `{ url: '/questions/:order', defaults: [ order: 'new' ] }`
 
+After compilation (bundling with Webpack or Browserify) all these routes are combined
+into one object which is then used on both client and server.
+
 ---
 MIT (c) Konstantin Tarkus ([@koistya](https://twitter.com/koistya)
