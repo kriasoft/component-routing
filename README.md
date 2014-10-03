@@ -61,9 +61,9 @@ You can have relative URLs, so instead of `/questions/:id-*` you may write `~/:i
 Example:
 
 ```jsx
-// URL: /store/hot-deals
-<Store route={ url: '/store/:category?' }>
-  <HotDeals route={ url: '/store/hot-deals' } />
+// URL: /store OR /store/electronics
+<Store route={ url: '/store' }>
+  <Products route={ url: '/store/:productCategory?' } />
 </Store>
 
 // URL: /store/checkout
