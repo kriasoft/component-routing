@@ -25,10 +25,10 @@ this approach has its own advantages, such as:
  
 Consider a web application with the following URLs (StackOverflow):
 
-/questions
-/questions/new
-/questions/featured
-/qeustions/12345-what-is-component-based-routing
+`/questions`<br>
+`/questions/new`<br>
+`/questions/featured`<br>
+`/qeustions/12345-what-is-component-based-routing`
 
 ```
 // ./components/QuestionsPage.jsx
@@ -37,7 +37,7 @@ var QuestionsPage = React.createComponent({
   // View / Controller View
 });
 
-QuestionsPage.route = { url: '/questions/:order', constraints: [ order: /(|new|featured)/ ] };
+QuestionsPage.route = { url: '/questions/:order', constraints: [ order: /(|new)/ ] };
 
 module.exports = QuestionsPage;
 ```
