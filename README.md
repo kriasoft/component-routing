@@ -79,6 +79,10 @@ You can specify default values, for example:
 After compilation (bundling with Webpack or Browserify) all these routes are combined
 into one object which is then used on both client and server.
 
+### See Also
+
+https://github.com/pillarjs/routington - A [trie](http://en.wikipedia.org/wiki/Trie)-based routing library
+
 ### Contributing
 
 Feel free to [fork the repo](https://github.com/kriasoft/component-routing/fork)
