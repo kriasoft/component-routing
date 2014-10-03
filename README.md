@@ -56,6 +56,8 @@ QuestionPage.route = { url: '/questions/:id-*', constraints: [ id: /[0-9]+/ ], o
 module.exports = QuestionPage;
 ```
 
+### Relative paths
+
 You can have relative URLs, so instead of `/questions/:id-*` you may write `~/:id-*`
 
 Example:
