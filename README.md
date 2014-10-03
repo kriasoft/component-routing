@@ -21,7 +21,7 @@ this approach has its own advantages, such as:
  * Routes are concatenated into a single object and optimized at compile time
  * Less room for making a mistake when defining new routes or modified existing ones
 
-## Example
+### Example
  
 Consider a web application with the following URLs (StackOverflow):
 
@@ -79,5 +79,12 @@ You can specify default values, for example:
 After compilation (bundling with Webpack or Browserify) all these routes are combined
 into one object which is then used on both client and server.
 
----
-MIT (c) Konstantin Tarkus ([@koistya](https://twitter.com/koistya)
+### Contributing
+
+Feel free to [fork the repo](https://github.com/kriasoft/component-routing/fork)
+and send a pull request with your updates.
+
+### Copyright
+
+The Creative Commons License ([CC BY SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
+(c) Konstantin Tarkus ([@koistya](https://twitter.com/koistya)
