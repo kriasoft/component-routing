@@ -30,6 +30,8 @@ Consider a web application with the following URLs (StackOverflow):
 `/questions/featured`<br>
 `/qeustions/12345-what-is-component-based-routing`
 
+Components:
+
 ```
 // ./components/QuestionsPage.jsx
 
@@ -55,3 +57,5 @@ module.exports = QuestionPage;
 ```
 
 You can have relative URLs, so instead of `/questions/:id-*` you may write `~/:id-*`
+
+You can specify default values, for example `{ url: '/questions/:order', defaults: [ order: 'new' ] }`
