@@ -63,12 +63,12 @@ Example:
 ```jsx
 // URL: /store OR /store/electronics
 <Store route={ url: '/store' }>
-  <Products route={ url: '/store/:productCategory?' } />
+  <Products route={ url: '/store/:productCategory?' } />    // Full path
 </Store>
 
 // URL: /store/checkout
 <Store route={ url: '/store' }>
-  <Checkout route={ url: '~/checkout' } />
+  <Checkout route={ url: '~/checkout' } />                  // Relative path
 </Store>
 ```
 
