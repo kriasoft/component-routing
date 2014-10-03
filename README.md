@@ -36,7 +36,7 @@ Components:
 // ./components/QuestionsPage.jsx
 
 var QuestionsPage = React.createComponent({
-  // View / Controller View
+  // Regular React.js component
 });
 
 QuestionsPage.route = { url: '/questions/:order', constraints: [ order: /(|new)/ ] };
@@ -48,7 +48,7 @@ module.exports = QuestionsPage;
 // ./components/QuestionPage.jsx
 
 var QuestionPage = React.createComponent({
-  // View / Controller View
+  // Regular React.js component
 });
 
 QuestionPage.route = { url: '/questions/:id-*', constraints: [ id: /[0-9]+/ ], order: 10 };
