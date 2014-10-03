@@ -61,9 +61,9 @@ You can have relative URLs, so instead of `/questions/:id-*` you may write `~/:i
 Example:
 
 ```jsx
-// URL: /store/products
-<Store route={ url: '/store' }>
-  <Products route={ url: '/store/products' } />
+// URL: /store/hot-deals
+<Store route={ url: '/store/:category?' }>
+  <HotDeals route={ url: '/store/hot-deals' } />
 </Store>
 
 // URL: /store/checkout
@@ -72,9 +72,13 @@ Example:
 </Store>
 ```
 
-You can specify default values, for example:
+You can mark optional parameters with a question mark, for example:
 
-`{ url: '/questions/:order', defaults: [ order: 'new' ] }`
+`{ url: '/products/:category?` }
+
+You can provide default values, for example:
+
+`{ url: '/questions/:sortingOrder', defaults: [ sortingOrder: 'new' ] }`
 
 After compilation (bundling with Webpack or Browserify) all these routes are combined
 into one object which is then used on both client and server.
