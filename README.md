@@ -60,7 +60,7 @@ You can have relative URLs, so instead of `/questions/:id-*` you may write `~/:i
 
 Example:
 
-```xml
+```jsx
 // URL: /store/products
 <Store route={ url: '/store' }>
   <Products route={ url: '/store/products' } />
