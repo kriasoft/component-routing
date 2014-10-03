@@ -72,4 +72,9 @@ Example:
 </Store>
 ```
 
-You can specify default values, for example `{ url: '/questions/:order', defaults: [ order: 'new' ] }`
+You can specify default values, for example:
+
+`{ url: '/questions/:order', defaults: [ order: 'new' ] }`
+
+---
+MIT (c) Konstantin Tarkus ([@koistya](https://twitter.com/koistya)
