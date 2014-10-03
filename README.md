@@ -32,7 +32,7 @@ Consider a web application with the following URLs (StackOverflow):
 
 Components:
 
-```
+```js
 // ./components/QuestionsPage.jsx
 
 var QuestionsPage = React.createComponent({
@@ -44,7 +44,7 @@ QuestionsPage.route = { url: '/questions/:order', constraints: [ order: /(|new)/
 module.exports = QuestionsPage;
 ```
 
-```
+```js
 // ./components/QuestionPage.jsx
 
 var QuestionPage = React.createComponent({
@@ -57,5 +57,19 @@ module.exports = QuestionPage;
 ```
 
 You can have relative URLs, so instead of `/questions/:id-*` you may write `~/:id-*`
+
+Example:
+
+```xml
+// URL: /store/products
+<Store route={ url: '/store' }>
+  <Products route={ url: '/store/products' } />
+</Store>
+
+// URL: /store/checkout
+<Store route={ url: '/store' }>
+  <Checkout route={ url: '~/checkout' } />
+</Store>
+```
 
 You can specify default values, for example `{ url: '/questions/:order', defaults: [ order: 'new' ] }`
