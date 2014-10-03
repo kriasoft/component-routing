@@ -72,16 +72,31 @@ Example:
 </Store>
 ```
 
+### Optional Parameters
+
 You can mark optional parameters with a question mark, for example:
 
-`{ url: '/products/:category?` }
+`{ url: '/products/:category?' }`
+
+This route will match both `/products` and `/products/electronics` URLs.
+
+### Default Values
 
 You can provide default values, for example:
 
 `{ url: '/questions/:sortingOrder', defaults: [ sortingOrder: 'new' ] }`
 
-After compilation (bundling with Webpack or Browserify) all these routes are combined
-into one object which is then used on both client and server.
+### Constraints
+
+`{ url: '/questions/:id', constraints: [ id: /[0-9]+/ ] }`
+
+This route will match `/quetions/123` but not `/questions/abc` URL.
+
+### Compilation
+
+During a compilation (bundling with Webpack or Browserify) all these routes are
+going to be combined into a single object which is then can be used on both
+client and server.
 
 ### See Also
 
