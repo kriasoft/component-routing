@@ -90,5 +90,4 @@ and send a pull request with your updates.
 
 ### Copyright
 
-The Creative Commons License ([CC BY SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/))
-(c) Konstantin Tarkus ([@koistya](https://twitter.com/koistya))
+(c) Konstantin Tarkus ([@koistya](https://twitter.com/koistya)) This work is licensed under [CC BY SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
