@@ -35,7 +35,7 @@ Components:
 ```js
 // ./components/QuestionsPage.jsx
 
-var QuestionsPage = React.createComponent({
+var QuestionsPage = React.createClass({
   // Regular React.js component
 });
 
@@ -47,7 +47,7 @@ module.exports = QuestionsPage;
 ```js
 // ./components/QuestionPage.jsx
 
-var QuestionPage = React.createComponent({
+var QuestionPage = React.createClass({
   // Regular React.js component
 });
 
